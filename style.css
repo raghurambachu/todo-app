@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 500px;
+    
+}
+
+/* Typography */
+h1{
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Todo-app */
+.todo-app-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.todo-app{
+   
+    display: flex;
+    margin: 0 auto;
+    opacity: 0.7;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    background: #FBFBFB;
+    
+}
+
+input{
+    font-size: 24px;
+}
+
+.toggle-all-checkboxes{
+   /* visibility: hidden; */
+   font-size: 24px;
+   align-self: center;
+   padding: 0.5em;
+   visibility: hidden;
+   opacity: 0.7;
+  
+}
+
+
+.initial-input{
+    width: 100%;
+    padding: 0.5em 0.3em;
+    border: none;
+    outline: none;
+    
+}
+
+.todo-item{
+    background-color: #FBFBFB;
+    padding: 0.5em 0.3em;
+    font-size: 24px;
+    margin-top: -0.5px;
+    border: 0.5px solid lightgrey;
+    position: relative;
+    z-index:1;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4);
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    position: relative;
+
+}
+
+.todo-item-checkbox-span{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    
+}
+
+.todo-item-checkbox{
+    display: inline-block;
+    width: 100%;
+    width: 1em;
+    height: 1em;
+    
+}
+
+.todo-item-content-span{
+    width: 90%;
+}
+
+.todo-item-close{
+    position: absolute;
+    top: 0.9rem;
+    right: 0.9rem;
+    font-size: 1.6rem;
+    display: none;
+    cursor: pointer;
+    color: red;
+    
+}
+
+.todo-item-close:hover{
+    display: block;
+    font-weight: bold;
+}
+
+.todo-item-content-span:hover + .todo-item-close{
+    display: block;
+    
+}
+
+.last-li-one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-li-one{
+    background-color: #FBFBFB;
+    padding: 1em;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4);
+    margin-top: -1px;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+
+.last-li-button{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 0.5px solid black;
+    border-radius: 0.4em;
+}
+
+.last-li-two{
+    height: 4px;
+    background: #FBFBFB;
+    box-shadow: 0px 4px 2px rgba(0,0,0,0.4);
+}
+
+.selected{
+    background: lightgrey !important;
+}
+
+.todo-item-input-content-span{
+    width: 100%;
+    text-align: left !important;
+}
